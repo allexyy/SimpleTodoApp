@@ -11,6 +11,8 @@
 		4B7B042E276E0BF7007F7584 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B042D276E0BF7007F7584 /* ContentView.swift */; };
 		4B7B0430276E0BF8007F7584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7B042F276E0BF8007F7584 /* Assets.xcassets */; };
 		4B7B0433276E0BF8007F7584 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7B0432276E0BF8007F7584 /* Preview Assets.xcassets */; };
+		4B7B043B276E0C2E007F7584 /* SimpleTodoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B0439276E0C2E007F7584 /* SimpleTodoModel.xcdatamodeld */; };
+		4B7B043E276E0D2F007F7584 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7B043D276E0D2F007F7584 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		4B7B042D276E0BF7007F7584 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B7B042F276E0BF8007F7584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B7B0432276E0BF8007F7584 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B7B043A276E0C2E007F7584 /* SimpleTodoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleTodoModel.xcdatamodel; sourceTree = "<group>"; };
+		4B7B043D276E0D2F007F7584 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,12 @@
 		4B7B042A276E0BF7007F7584 /* SImpleTodo */ = {
 			isa = PBXGroup;
 			children = (
+				4B7B043C276E0D00007F7584 /* Managers */,
 				4B7B042B276E0BF7007F7584 /* SImpleTodoApp.swift */,
 				4B7B042D276E0BF7007F7584 /* ContentView.swift */,
 				4B7B042F276E0BF8007F7584 /* Assets.xcassets */,
 				4B7B0431276E0BF8007F7584 /* Preview Content */,
+				4B7B0439276E0C2E007F7584 /* SimpleTodoModel.xcdatamodeld */,
 			);
 			path = SImpleTodo;
 			sourceTree = "<group>";
@@ -65,6 +71,14 @@
 				4B7B0432276E0BF8007F7584 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B7B043C276E0D00007F7584 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4B7B043D276E0D2F007F7584 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7B043B276E0C2E007F7584 /* SimpleTodoModel.xcdatamodeld in Sources */,
 				4B7B042E276E0BF7007F7584 /* ContentView.swift in Sources */,
+				4B7B043E276E0D2F007F7584 /* CoreDataManager.swift in Sources */,
 				4B7B042C276E0BF7007F7584 /* SImpleTodoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +357,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4B7B0439276E0C2E007F7584 /* SimpleTodoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4B7B043A276E0C2E007F7584 /* SimpleTodoModel.xcdatamodel */,
+			);
+			currentVersion = 4B7B043A276E0C2E007F7584 /* SimpleTodoModel.xcdatamodel */;
+			path = SimpleTodoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4B7B0420276E0BF7007F7584 /* Project object */;
 }
